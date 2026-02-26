@@ -37,5 +37,5 @@ Start here. Follow links to section indexes (`Projects/_index.md`, etc.). Use `_
 
 - [[docs/user-guide-personal-vault|User Guide]] — Workflows and best practices
 - [[docs/plugin-config|Plugin Configuration]] — Templater, Periodic Notes, QuickAdd, Longform
-- [[docs/create-project-setup|Create Project Setup]] — QuickAdd macro for new projects
+- [[docs/create-project-setup|Create Project Setup]] — QuickAdd Macro for new projects (homepage + ToDo + Research)
 - [[docs/template-customization-guide|Template Customization]] — How to modify or add templates

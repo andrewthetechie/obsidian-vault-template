@@ -3,7 +3,7 @@
 ## Templater
 - **Template folder:** `Templates`
 - **Trigger:** On file creation (for Periodic Notes) or manual insert
-- **Project scaffold:** See QuickAdd "Create Project" macro
+- **Project scaffold:** See QuickAdd "Create Project" (docs/create-project-setup.md)
 
 ## Periodic Notes
 - **Daily:** Folder `Journal/Daily`, format `YYYY-MM-DD-ddd`, template `Templates/Daily.md`, create on first open
@@ -16,9 +16,13 @@
 - **Section:** "Tasks" or "Rolled Over"
 
 ## QuickAdd
-- **Add to Annoyances:** Capture → Append to `Capture/Annoyances.md`, format `- {{value}}`
-- **Add to Ideas:** Capture → Append to `Capture/Ideas.md`, format `- {{value}}`
-- **Create Project:** See Task 12
+
+QuickAdd has four choice types: **Template**, **Capture**, **Macro**, and **Multi**. When you click "Add Choice", you must select the type from the dropdown (Template is often the default—look for Capture and Macro).
+
+- **Template Folder Path** (in QuickAdd settings → Templates & Properties): Set to `Templates` (or `templates`—match your vault's folder name)
+- **Add to Annoyances:** Capture choice → appends to `Capture/Annoyances.md`
+- **Add to Ideas:** Capture choice → appends to `Capture/Ideas.md`
+- **Create Project:** Macro (creates homepage + ToDo + Research) → see docs/create-project-setup.md
 
 ## Longform
 - **Projects folder:** `Creative`
@@ -26,7 +30,15 @@
 
 ## QuickAdd Capture Setup (Detailed)
 
-1. Open QuickAdd settings
-2. **Add to Annoyances:** New Choice → Capture → Name: "Add to Annoyances" → Capture format: `- {{value}}` → Append to: `Capture/Annoyances.md` → Save
-3. **Add to Ideas:** Same, append to `Capture/Ideas.md`
-4. Optional: Assign hotkeys (e.g. Cmd+Shift+A, Cmd+Shift+I)
+Capture choices append your input to a file. Setup:
+
+1. Open QuickAdd settings → **Choices & Packages**
+2. Click **Add Choice** → select **Capture** (not Template)
+3. **Add to Annoyances:**
+   - Name: `Add to Annoyances`
+   - **Capture To:** `Capture/Annoyances.md` (file path)
+   - **Capture Format:** `- {{VALUE}}` (bullet + your input)
+   - Enable **Write to bottom of file**
+   - Save
+4. **Add to Ideas:** Repeat with `Capture/Ideas.md`
+5. Optional: Assign hotkeys (e.g. Cmd+Shift+A, Cmd+Shift+I) via Obsidian Settings → Hotkeys

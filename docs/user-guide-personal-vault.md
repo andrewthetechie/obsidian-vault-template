@@ -34,7 +34,7 @@
 
 ## New Project
 
-Run QuickAdd → Create Project (or Cmd+P → "Create Project"), enter project name (e.g. `phone-cluster`), press Enter. Fill in overview, links in the new `_index.md`.
+Run QuickAdd → Create Project (or Cmd+P → "QuickAdd" → "Create Project"), enter project name (e.g. `phone-cluster`), press Enter. Creates `_index.md` (homepage), `ToDo.md` (task list), and `Research.md` (links + freeform thoughts). Fill in overview and links on the homepage. See docs/create-project-setup.md for setup.
 
 ## Weekly
 

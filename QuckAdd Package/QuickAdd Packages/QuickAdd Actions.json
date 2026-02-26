@@ -1,0 +1,258 @@
+{
+  "schemaVersion": 1,
+  "quickAddVersion": "2.11.0",
+  "createdAt": "2026-02-26T05:26:42.754Z",
+  "rootChoiceIds": [
+    "beb4c4ad-e821-4ed8-92b2-055a90322b62",
+    "6c9f0c8f-73cc-4563-9053-82e013f2d154",
+    "b050ca5e-ee48-404e-a0d0-9a81fbd2637e"
+  ],
+  "choices": [
+    {
+      "choice": {
+        "id": "beb4c4ad-e821-4ed8-92b2-055a90322b62",
+        "name": "Create Project",
+        "type": "Macro",
+        "command": false,
+        "runOnStartup": false,
+        "macro": {
+          "name": "Create Project",
+          "id": "d94e14c1-947c-42fb-9084-4f0a9f00c0c2",
+          "commands": [
+            {
+              "name": "Create Homepage",
+              "type": "NestedChoice",
+              "id": "87c838af-b540-43bd-b77a-d3eded641ec5",
+              "choice": {
+                "id": "fd4b4e5f-26a4-48f2-9366-04cb0322f5c3",
+                "name": "Create Homepage",
+                "type": "Template",
+                "command": false,
+                "templatePath": "Templates/Project-Homepage.md",
+                "fileNameFormat": {
+                  "enabled": true,
+                  "format": "Projects/{{VALUE:projectName}}/_index"
+                },
+                "folder": {
+                  "enabled": false,
+                  "folders": [
+                    "Projects"
+                  ],
+                  "chooseWhenCreatingNote": false,
+                  "createInSameFolderAsActiveFile": false,
+                  "chooseFromSubfolders": false
+                },
+                "appendLink": false,
+                "openFile": true,
+                "fileOpening": {
+                  "location": "reuse",
+                  "direction": "vertical",
+                  "mode": "default",
+                  "focus": true
+                },
+                "fileExistsMode": "Increment the file name",
+                "setFileExistsBehavior": false
+              }
+            },
+            {
+              "name": "Create ToDo",
+              "type": "NestedChoice",
+              "id": "92ff9d4f-47ff-4c12-981f-92c7a9b962b1",
+              "choice": {
+                "id": "ad8197a1-17d5-4a01-a73b-b01590967797",
+                "name": "Create ToDo",
+                "type": "Template",
+                "command": false,
+                "templatePath": "Templates/Project-ToDo.md",
+                "fileNameFormat": {
+                  "enabled": true,
+                  "format": "Projects/{{VALUE:projectName}}/ToDo"
+                },
+                "folder": {
+                  "enabled": false,
+                  "folders": [],
+                  "chooseWhenCreatingNote": false,
+                  "createInSameFolderAsActiveFile": false,
+                  "chooseFromSubfolders": false
+                },
+                "appendLink": false,
+                "openFile": false,
+                "fileOpening": {
+                  "location": "tab",
+                  "direction": "vertical",
+                  "mode": "default",
+                  "focus": true
+                },
+                "fileExistsMode": "Increment the file name",
+                "setFileExistsBehavior": false
+              }
+            },
+            {
+              "name": "Create Research",
+              "type": "NestedChoice",
+              "id": "169e3d98-ddc0-4b23-9d44-761da37c5e49",
+              "choice": {
+                "id": "63e8d9b7-d691-4863-a271-496e5280a77d",
+                "name": "Create Research",
+                "type": "Template",
+                "command": false,
+                "templatePath": "Templates/Project-Research.md",
+                "fileNameFormat": {
+                  "enabled": true,
+                  "format": "Projects/{{VALUE:projectName}}/Research"
+                },
+                "folder": {
+                  "enabled": false,
+                  "folders": [
+                    "Projects"
+                  ],
+                  "chooseWhenCreatingNote": false,
+                  "createInSameFolderAsActiveFile": false,
+                  "chooseFromSubfolders": false
+                },
+                "appendLink": false,
+                "openFile": false,
+                "fileOpening": {
+                  "location": "tab",
+                  "direction": "vertical",
+                  "mode": "default",
+                  "focus": true
+                },
+                "fileExistsMode": "Increment the file name",
+                "setFileExistsBehavior": false
+              }
+            }
+          ]
+        }
+      },
+      "pathHint": [
+        "Create Project"
+      ],
+      "parentChoiceId": null
+    },
+    {
+      "choice": {
+        "id": "6c9f0c8f-73cc-4563-9053-82e013f2d154",
+        "name": "Add to Annoyances",
+        "type": "Capture",
+        "command": false,
+        "appendLink": false,
+        "captureTo": "Capture/Annoyances.md",
+        "captureToActiveFile": false,
+        "activeFileWritePosition": "cursor",
+        "createFileIfItDoesntExist": {
+          "enabled": false,
+          "createWithTemplate": false,
+          "template": ""
+        },
+        "format": {
+          "enabled": false,
+          "format": "- {{value}}"
+        },
+        "insertAfter": {
+          "enabled": false,
+          "after": "",
+          "insertAtEnd": false,
+          "considerSubsections": false,
+          "createIfNotFound": false,
+          "createIfNotFoundLocation": "top",
+          "inline": false,
+          "replaceExisting": false,
+          "blankLineAfterMatchMode": "auto"
+        },
+        "newLineCapture": {
+          "enabled": false,
+          "direction": "below"
+        },
+        "prepend": true,
+        "task": true,
+        "openFile": true,
+        "fileOpening": {
+          "location": "tab",
+          "direction": "vertical",
+          "mode": "default",
+          "focus": true
+        },
+        "templater": {
+          "afterCapture": "none"
+        }
+      },
+      "pathHint": [
+        "Add to Annoyances"
+      ],
+      "parentChoiceId": null
+    },
+    {
+      "choice": {
+        "id": "b050ca5e-ee48-404e-a0d0-9a81fbd2637e",
+        "name": "Add to Ideas",
+        "type": "Capture",
+        "command": false,
+        "appendLink": false,
+        "captureTo": "Capture/Ideas.md",
+        "captureToActiveFile": false,
+        "activeFileWritePosition": "cursor",
+        "createFileIfItDoesntExist": {
+          "enabled": false,
+          "createWithTemplate": false,
+          "template": ""
+        },
+        "format": {
+          "enabled": true,
+          "format": "- {{value}}"
+        },
+        "insertAfter": {
+          "enabled": false,
+          "after": "",
+          "insertAtEnd": false,
+          "considerSubsections": false,
+          "createIfNotFound": false,
+          "createIfNotFoundLocation": "top",
+          "inline": false,
+          "replaceExisting": false,
+          "blankLineAfterMatchMode": "auto"
+        },
+        "newLineCapture": {
+          "enabled": false,
+          "direction": "below"
+        },
+        "prepend": true,
+        "task": false,
+        "openFile": true,
+        "fileOpening": {
+          "location": "tab",
+          "direction": "vertical",
+          "mode": "default",
+          "focus": true
+        },
+        "templater": {
+          "afterCapture": "none"
+        }
+      },
+      "pathHint": [
+        "Add to Ideas"
+      ],
+      "parentChoiceId": null
+    }
+  ],
+  "assets": [
+    {
+      "kind": "template",
+      "originalPath": "Templates/Project-Homepage.md",
+      "contentEncoding": "base64",
+      "content": "LS0tCnByb2plY3Q6IDwlIHRwLmZpbGUuZm9sZGVyKHRydWUpLnNwbGl0KCIvIikucG9wKCkgJT4KdHlwZTogcHJvamVjdApzdGF0dXM6IGFjdGl2ZQp0YWdzOiBbcHJvamVjdF0KY3JlYXRlZDogPCUgdHAuZGF0ZS5ub3coIllZWVktTU0tREQiKSAlPgotLS0KIyA8JSB0cC5maWxlLmZvbGRlcih0cnVlKS5zcGxpdCgiLyIpLnBvcCgpICU+CgojIyBPdmVydmlldwooQnJpZWYgYmx1cmIsIHdobydzIGludm9sdmVkKQoKIyMgTGlua3MKLSAqKlJlcG86KiogCi0gKipEb2NzOioqIAoKIyMgU3RhdHVzIC8gTm90ZXMKCiMjIFByb2plY3QgRmlsZXMKLSBbWzwlIHRwLmZpbGUuZm9sZGVyKHRydWUpICU+L1RvRG98VG9Eb11dCi0gW1s8JSB0cC5maWxlLmZvbGRlcih0cnVlKSAlPi9SZXNlYXJjaHxSZXNlYXJjaF1dCg=="
+    },
+    {
+      "kind": "template",
+      "originalPath": "Templates/Project-ToDo.md",
+      "contentEncoding": "base64",
+      "content": "LS0tCnByb2plY3Q6IDwlIHRwLmZpbGUuZm9sZGVyKHRydWUpLnNwbGl0KCIvIikucG9wKCkgJT4KdHlwZTogcHJvamVjdC10b2RvCnRhZ3M6IFtwcm9qZWN0LCB0b2RvXQotLS0KIyBUb0RvOiBbWzwlIHRwLmZpbGUuZm9sZGVyKHRydWUpICU+L19pbmRleHw8JSB0cC5maWxlLmZvbGRlcih0cnVlKS5zcGxpdCgiLyIpLnBvcCgpICU+XV0KCi0gWyBdCg=="
+    },
+    {
+      "kind": "template",
+      "originalPath": "Templates/Project-Research.md",
+      "contentEncoding": "base64",
+      "content": "LS0tCnByb2plY3Q6IDwlIHRwLmZpbGUuZm9sZGVyKHRydWUpLnNwbGl0KCIvIikucG9wKCkgJT4KdHlwZTogcHJvamVjdC1yZXNlYXJjaAp0YWdzOiBbcHJvamVjdCwgcmVzZWFyY2hdCi0tLQojIFJlc2VhcmNoOiBbWzwlIHRwLmZpbGUuZm9sZGVyKHRydWUpICU+L19pbmRleHw8JSB0cC5maWxlLmZvbGRlcih0cnVlKS5zcGxpdCgiLyIpLnBvcCgpICU+XV0KCiMjIExpbmtzCgojIyBGcmVlZm9ybSBUaG91Z2h0cwo="
+    }
+  ]
+}

@@ -5,7 +5,6 @@ status: active
 tags: [project]
 created: <% tp.date.now("YYYY-MM-DD") %>
 ---
-
 # <% tp.file.folder(true).split("/").pop() %>
 
 ## Overview
@@ -14,6 +13,9 @@ created: <% tp.date.now("YYYY-MM-DD") %>
 ## Links
 - **Repo:** 
 - **Docs:** 
-- **Slack:** 
 
 ## Status / Notes
+
+## Project Files
+- [[<% tp.file.folder(true) %>/ToDo|ToDo]]
+- [[<% tp.file.folder(true) %>/Research|Research]]
